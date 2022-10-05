@@ -9,3 +9,4 @@ mkdir /tmp/my_first_directory/: creates a directory in the /tmp/ directory
 mv /tmp/betty /tmp/my_first_directory/betty: moves the file 'betty' from /tmp to /tmp/my_first_directory
 rm /tmp/my_first_directory/betty: deletes the file 'betty'
 rm /tmp/my_first_directory: deletes the directory 'my_first_directory'
+cd -: changes the working directory to the previous one
