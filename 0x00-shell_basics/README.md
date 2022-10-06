@@ -17,3 +17,5 @@
 100- mv [[:upper:]]* /tmp/u: moves all files beginning with an uppercase letter to the directory /tmp/u
 101- rm *~: deletes all files in the current working directory that end with the character ~
 102- mkdir -p welcome/to/school: creates the directories 'welcome/' 'welcome/to' and 'welcome/to/school' all inside the current working directory
+103- ls -pamv: lists all the files and directories of the current directory, separated by commas(,). Directory names end with a slash(/); files and directories starting with a dot(.) are listed; the listing is in alphabetic order (except for the directories . and .. which are at the very beginning); only letters and digits are used to sort (digits should come first); all files have at least one letter or one digit; the listing ends with a new line.
+school.mgc: creates a magic file that can be used with the command 'file' to detect 'School' data files. 'School' data files always contain the string 'SCHOOL' at offset 0.
