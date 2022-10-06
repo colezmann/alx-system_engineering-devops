@@ -14,3 +14,4 @@ ls -la . .. /boot: lists all files (including hidden files) in the current direc
 file /tmp/iamafile: prints the type of file named 'iamafile' located in the /tmp directory
 ln -s /bin/ls __ls__: creates a symbolic link to /bin/ls named __ls__ (created in the current working directory)
 cp -nu *.html ..: copies all the HTML files from the current working directory to the parent of the working directory, but only copies files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory
+mv [[:upper:]]* /tmp/u: moves all files beginning with an uppercase letter to the directory /tmp/u
