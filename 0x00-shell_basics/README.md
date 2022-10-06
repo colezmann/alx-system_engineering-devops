@@ -11,3 +11,4 @@ rm /tmp/my_first_directory/betty: deletes the file 'betty'
 rm /tmp/my_first_directory: deletes the directory 'my_first_directory'
 cd -: changes the working directory to the previous one
 ls -la . .. /boot: lists all files (including hidden files) in the current directory, the parent of the working directory and the '/boot' directory (in this order) in long format
+file /tmp/iamafile: prints the type of file named 'iamafile' located in the /tmp directory
