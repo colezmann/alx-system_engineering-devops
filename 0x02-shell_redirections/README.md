@@ -24,17 +24,17 @@
 
 11- `find . -type d -not -name '.' | wc -l`:
 					counts the number of directories and sub-directories in the current directory.
-					_The current and parent directories are not taken into account_
-					_Hidden directories are counted_
+					_The current and parent directories are not taken into account_.
+					_Hidden directories are counted_.
 
 12- `ls -t1 | head -n 10`:		displays the 10 newest files in the current directory.
-					_One file per line_
-					_Sorted from the newest to the oldest_
+					_One file per line_.
+					_Sorted from the newest to the oldest_.
 
 13- `sort | uniq -u`:			takes a list of words as inputs and prints only words that appear exactly once.
-					_Input format: One line, one word_
-					_Output format: One line, one word_
-					_Words are sorted_
+					_Input format: One line, one word_.
+					_Output format: One line, one word_.
+					_Words are sorted_.
 
 14- `grep -i "root" /etc/passwd`:	displays lines containing the pattern "root" from the file `/etc/passwd`.
 
@@ -46,7 +46,7 @@
 
 18- `grep -i "^[a-z]" /etc/ssh/sshd_config`:
 					displays all lines of the file `/etc/ssh/sshd_config` starting with a letter.
-					_includes capital letters as well_
+					_includes capital letters as well_.
 
 19- `tr "A" "Z" | tr "c" "e"`:		replaces all characters `A` and `c` from input to `z` and `e` respectively.
 
@@ -56,27 +56,27 @@
 
 22- `cut -d ':' -f 1,6 /etc/passwd | sort`:
 					displays all users and their home directories, sorted by users.
-					_Based on the `/etc/passwd` file_
+					_Based on the `/etc/passwd` file_.
 
 23- `find . -empty | rev | cut -d '/' -f 1 | rev`:
 					finds all empty files and directories in the current directory and all sub-directories.
-					_Only the names of the files and directories are displayed (not the entire path)_
-					_Hidden files are listed_
-					_One file name per line_
-					_The listing ends with a new line_
+					_Only the names of the files and directories are displayed (not the entire path)_.
+					_Hidden files are listed_.
+					_One file name per line_.
+					_The listing ends with a new line_.
 
 24- `find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d "." -f 2- | rev | LC_ALL=C sort -f`:
 					lists all the files with a `.gif` extension in the current directory and all its sub-directories.
-					_Hidden files are listed_
-					_Only regular files (not directories) are listed
-					_The names of the files are displayed without their extensions_
-					_The files are sorted by byte values, but case-insensitive (file `aaa` is listed before file `bbb`, file `.b` is listed before file `a`, and file `Rona` is listed after file `jay`)_
-					_One file name per line_
-					_The listing ends with a new line_
+					_Hidden files are listed_.
+					_Only regular files (not directories) are listed_.
+					_The names of the files are displayed without their extensions_.
+					_The files are sorted by byte values, but case-insensitive (file `aaa` is listed before file `bbb`, file `.b` is listed before file `a`, and file `Rona` is listed after file `jay`)_.
+					_One file name per line_.
+					_The listing ends with a new line_.
 
 25- `cut -c 1 | paste -s -d ''`:	decodes acrostics that use the first letter of each line.
-					_The 'decoded' message ends with a new line_
+					_The 'decoded' message ends with a new line_.
 
 26- `tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev`:
 					parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
-					_Ordered by number of requests, most active host or IP at the top_
+					_Ordered by number of requests, most active host or IP at the top_.
