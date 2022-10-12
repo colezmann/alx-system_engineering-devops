@@ -58,14 +58,14 @@
 					displays all users and their home directories, sorted by users.
 					_Based on the `/etc/passwd` file_.
 
-23- `find . -empty | rev | cut -d '/' -f 1 | rev`:
+100- `find . -empty | rev | cut -d '/' -f 1 | rev`:
 					finds all empty files and directories in the current directory and all sub-directories.
 					_Only the names of the files and directories are displayed (not the entire path)_.
 					_Hidden files are listed_.
 					_One file name per line_.
 					_The listing ends with a new line_.
 
-24- `find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d "." -f 2- | rev | LC_ALL=C sort -f`:
+101- `find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d "." -f 2- | rev | LC_ALL=C sort -f`:
 					lists all the files with a `.gif` extension in the current directory and all its sub-directories.
 					_Hidden files are listed_.
 					_Only regular files (not directories) are listed_.
@@ -74,9 +74,9 @@
 					_One file name per line_.
 					_The listing ends with a new line_.
 
-25- `cut -c 1 | paste -s -d ''`:	decodes acrostics that use the first letter of each line.
+102- `cut -c 1 | paste -s -d ''`:	decodes acrostics that use the first letter of each line.
 					_The 'decoded' message ends with a new line_.
 
-26- `tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev`:
+103- `tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev`:
 					parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 					_Ordered by number of requests, most active host or IP at the top_.
